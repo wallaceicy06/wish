@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { DashboardComponent } from './dashboard.component';
+import { WishlistService, FakeWishlistService } from '../model/testing/fake-wishlist.service';
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -11,6 +12,7 @@ describe('DashboardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      providers: [ { provide: WishlistService, useClass: FakeWishlistService} ],
       declarations: [ DashboardComponent ]
     })
     .compileComponents();

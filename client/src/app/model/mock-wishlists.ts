@@ -1,6 +1,6 @@
 import { Wishlist } from './wishlist';
 
 export const WISHLISTS: Wishlist[] = [
-  {name: 'My first wishlist'},
-  {name: 'My favorite wishlist!'}
+  new Wishlist('My first wishlist'),
+  new Wishlist('My favorite wishlist!')
 ];
