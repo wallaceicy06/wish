@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { AppRouterModule } from './router/app-router.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WishlistService } from './wishlist.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpModule,
     AppRouterModule
   ],
-  providers: [],
+  providers: [WishlistService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
